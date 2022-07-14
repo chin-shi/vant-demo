@@ -9,7 +9,7 @@ const password = ref("");
 const code = ref("");
 
 const loading = ref(true);
-const group: any = reactive([]);
+const group: Array<number> = reactive([]);
 
 onMounted(() => {
   setTimeout(() => {
@@ -23,7 +23,7 @@ const handleHelp = () => {
   Toast.success("成功文案");
 };
 
-const onSubmit = (values: any) => {
+const onSubmit = (values: object) => {
   console.log("submit", values);
 };
 </script>
